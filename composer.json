@@ -1,0 +1,28 @@
+{
+  "name": "mirafzal/telegram-bot-framework",
+  "description": "Simple and powerful telegram bot framework",
+  "type": "framework",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "mirafzal",
+      "email": "shavkatovm99@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "ext-json": "*",
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "core\\": "core"
+    },
+    "files": [
+      "Config.php",
+      "helpers/functions.php",
+      "core/utils/rb.php",
+      "core/setup.php"
+    ]
+  }
+}
