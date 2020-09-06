@@ -1,15 +1,11 @@
 <?php
 
-use core\utils\Texts;
 use core\utils\Tg;
 
 require_once 'vendor/autoload.php';
 
-sendMessage(Texts::get('broadcast_complete_info', 1, 2));
-
 switch (Tg::getUpdateType()) {
     case Tg::MESSAGE:
-//        broadcastMessage('testt');
         // handle global commands
         if (Tg::Text() == '/start') {
             Start::show();

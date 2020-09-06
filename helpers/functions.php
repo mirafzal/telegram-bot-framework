@@ -56,11 +56,7 @@ function broadcastMessage($text)
             $response['ok'] ? $successCount++ : $failCount++;
             sleep(1);
         }
-        sendMessage(Texts::get('broadcast_complete_info', [$successCount, $failCount])
-//            Texts::get('broadcast_completed') . "\n" .
-//            Texts::get('active_users') . ": $successCount" . "\n" .
-//            Texts::get('inactive_users') . ": $failCount"
-        );
+        sendMessage(Texts::get('broadcast_complete_info', $successCount, $failCount));
         unlink(__DIR__ . '/bc.tmp');
     } else {
         sendMessage("Another message is being sent at the moment. Try later.");
