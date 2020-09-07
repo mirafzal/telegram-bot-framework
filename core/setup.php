@@ -29,11 +29,11 @@ switch (strtolower(Config::DATABASE_TYPE)) {
         if (!file_exists($directory)) {
             mkdir($directory);
         }
-        $fileName = 'db.sqlite';
+        $fileName = $directory . 'db.sqlite';
         if (!file_exists($fileName)) {
-            file_put_contents($directory . '/' . $fileName, '');
+            file_put_contents($fileName, '');
         }
-        R::setup('sqlite:' . $directory . '/' . $fileName);
+        R::setup('sqlite:' . $fileName);
         break;
     case 'mysql':
         R::setup('mysql:host=' . Config::DATABASE_HOSTNAME . ';dbname=' . Config::DATABASE_NAME,
