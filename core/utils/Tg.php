@@ -2159,7 +2159,7 @@ class Tg
         }
 
 
-        return self::$data['message']['chat']['id'];
+        return @self::$data['message']['chat']['id'];
 
     }
 
