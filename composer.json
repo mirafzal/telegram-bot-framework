@@ -9,7 +9,7 @@
       "email": "shavkatovm99@gmail.com"
     }
   ],
-  "minimum-stability": "dev",
+  "minimum-stability": "dev-master",
   "require": {
     "ext-json": "*",
     "ext-curl": "*"
