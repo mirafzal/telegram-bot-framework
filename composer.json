@@ -1,7 +1,7 @@
 {
   "name": "mirafzal/telegram-bot-framework",
   "description": "Simple and powerful telegram bot framework",
-  "type": "framework",
+  "type": "project",
   "license": "MIT",
   "authors": [
     {
